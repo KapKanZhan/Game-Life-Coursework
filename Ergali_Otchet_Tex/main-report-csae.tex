@@ -1,0 +1,111 @@
+\documentclass[14pt, oneside]{altsu-report}
+
+\worktype{Отчёт по практике на тему:}
+\title{Разработка клеточного автомата "Игра жизнь" на платформе Unity}
+\author{Б.\,Н.~Ергали}
+\groupnumber{5.205-1}
+\GradebookNumber{1337}
+\supervisor{И.\,А.~Шмаков}
+\supervisordegree{к.ф.-м.н., доцент}
+\ministry{Министерство науки и высшего образования}
+\country{Российской Федерации}
+\fulluniversityname{ФГБОУ ВО Алтайский государственный университет}
+\institute{Институт цифровых технологий, электроники и физики}
+\department{Кафедра вычислительной техники и электроники}
+\departmentchief{В.\,В.~Пашнев}
+\departmentchiefdegree{к.ф.-м.н., доцент}
+\shortdepartment{ВТиЭ}
+
+
+\abstractRU{В отчёте содержатся сведения о курсовой работе.
+
+Курсовая работа заключается в создании кроссплатформенной программы, представляющей Клеточный автомат "Игра жизнь".
+
+В отчёте приведено описание используемой библиотеки Unity, инструментария и системы контроля версий для написания игры на платформе Unity, с использованием языка C \#.
+
+Наряду с этим представлены проверка работспособности программы, диаграмма UML, полный код программы.}
+\abstractEN{The report contains information about the course work.
+
+The course work consists of creating a cross-platform program representing the Cellular Automaton "Game of Life".
+
+The report provides a description of the Unity library, tools and version control system used to write a game on the Unity platform using the C\# language.
+
+Along with this, a program functionality test, a UML diagram, and the complete program code are presented.}
+\keysRU{программа, игра, пакман, алгоритм, кроссплатформенная программа}
+\keysEN{program, game, pacman, algorithm, cross-platform program}
+
+\date{\the\year}
+
+% Подключение файлов с библиотекой.
+\addbibresource{graduate-students.bib}
+
+% Пакет для отладки отступов.
+%\usepackage{showframe}
+
+\begin{document}
+\maketitle
+
+\setcounter{page}{2}
+\makeabstract
+\tableofcontents
+
+\chapter*{Введение}
+\phantomsection\addcontentsline{toc}{chapter}{ВВЕДЕНИЕ}
+
+\textbf{Актуальность:}
+Развитие технологий и увеличение доступности программных инструментов для создания игр открывает широкие возможности для исследования сложных систем и процессов через игровую форму. Применение языка программирования C\# в среде разработки Unity 2D для создания таких игр объединяет в себе глубокую актуальность как в образовательной, так и в научно-исследовательской сферах.
+
+Создание игры на основе клеточного автомата в среде Unity 2D позволяет не только демонстрировать сложные поведенческие паттерны и взаимодействия между элементами системы в наглядной и доступной форме, но и дает возможность пользователям влиять на процессы внутри игры, экспериментировать с параметрами и наблюдать за их эффектами.
+
+Интерес к созданию собственных миров и экосистем, где каждое действие может привести к непредсказуемым последствиям, высок среди широкой аудитории. Таким образом, разработка игры, основанной на принципах клеточного автомата, является актуальной задачей, способной привлечь внимание как образовательных учреждений, так и широкой публики, интересующейся наукой, технологиями и играми.
+
+\textbf{Цель:}
+Создать кроссплатформенный клеточный автомат "Игра жизнь" с использованием языка программирования C\#, на платформе Unity.
+
+
+\textbf{Задачи:}
+\begin{enumerate}
+	\item Изучить платформу Unity.
+	\item Изучить алгоритмы клеточных автоматов.
+	\item Изучить принцип ООП в C\#.
+	\item Изучить сборку проекта в Unity.
+\end{enumerate}
+
+% Подключение первой главы (теория):
+\include{chapter-1-report-csae.tex}
+% Подключение второй главы (практическая часть):
+\include{chapter-2-report-csae.tex}
+% Подключение третий главы (практическая часть с тестированием:
+\include{chapter-3-report-csae.tex}
+
+\chapter*{Заключение}
+\phantomsection\addcontentsline{toc}{chapter}{ЗАКЛЮЧЕНИЕ}
+
+\begin{enumerate}
+\item Пример ссылки на электронный источник~\cite{wikiRUBitbucket,wikiRUIdSoftware,wikiRUGitHub}.
+\item Пример ссылки на книгу одного автора~\cite{book1author}.
+\item Пример ссылки на книгу 5-ти и более авторов~\cite{book5author}.
+\end{enumerate}
+
+\newpage
+\phantomsection\addcontentsline{toc}{chapter}{СПИСОК ИСПОЛЬЗОВАННОЙ ЛИТЕРАТУРЫ}
+\printbibliography[title={Список использованной литературы}]
+
+\appendix
+\newpage
+\chapter*{\raggedleft\label{appendix1}Приложение}
+\phantomsection\addcontentsline{toc}{chapter}{ПРИЛОЖЕНИЕ}
+%\section*{\centering\label{code:appendix}Текст программы}
+
+\begin{center}
+\label{code:appendix}Текст программы
+\end{center}
+
+\begin{code}
+\captionof*{listing}{\centering\label{code:pi-example}Пример программы вычисления числа $\pi$ на языке \textit{C} с использованием \textit{MPI} (пример из https://ru.wikipedia
+.org/wiki/Message\_Passing\_Interface)}
+\vspace{-1cm}\inputminted{C}{src/pi-mpi.c}
+\end{code}
+
+\end{document}
+
