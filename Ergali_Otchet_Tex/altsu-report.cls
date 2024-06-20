@@ -393,14 +393,13 @@
   \end{center}
   
   Полный объём работы составляет \formbytotal{TotPages}{страниц}{у}{ы}{}, включая
-  \formbytotal{totalcount@figure}{рисун}{ок}{ка}{ков} и
-  \formbytotal{totalcount@table}{таблиц}{у}{ы}{}.
+  12 {рисун}{ков}.
   
   \@abstractRU
   
   Ключевые слова: \@keysRU.
   
-  Отчёт оформлена с помощью системы компьютерной вёрстки \TeX{} и его расширения \XeTeX{} 
+  Отчёт оформлен с помощью системы компьютерной вёрстки \TeX{} и его расширения \XeTeX{} 
   из дистрибутива \textit{TeX Live}.
   
   \begin{center}
